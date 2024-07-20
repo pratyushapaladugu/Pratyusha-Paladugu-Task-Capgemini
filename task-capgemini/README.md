@@ -33,9 +33,6 @@ node server.js
 The backend server will be running at http://localhost:3000/api/data.
 
 
-**********************************************************************
-
-
 ## Frontend Setup
 
 The frontend is built with Vue.js and Vite.
