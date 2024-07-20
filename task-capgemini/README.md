@@ -7,8 +7,6 @@ This project includes both a backend server and a frontend application. Follow t
 For the best development experience, use [VSCode](https://code.visualstudio.com/) with relevant extensions.
 
 
-**********************************************************************
-
 ## Backend Setup
 
 The backend is built with Node.js and Express.
