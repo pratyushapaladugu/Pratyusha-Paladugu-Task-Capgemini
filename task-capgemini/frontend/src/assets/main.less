@@ -1,0 +1,84 @@
+@import './base.css';
+@import './variables.less';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: @base-color;
+  background: @base-bg;
+}
+
+#app {
+  padding: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: @primary;
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &.justify-content-end {
+    justify-content: flex-end;
+  }
+}
+
+.card {
+  padding: 1rem;
+  min-height: 100px;
+  min-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(201,201,201,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(201,201,201,1);
+  box-shadow: 0px 0px 5px 0px rgba(201,201,201,1);
+}
+
+.btn-icon {
+  background: @primary;
+  border: none;
+  padding: .5rem;
+  font-size: .875rem;
+  border-radius: .2rem;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+
+.svg {
+  min-width: 450px;
+
+  .node {
+    cursor: pointer;
+    rect {
+      fill: @base-bg;
+      stroke: #ccc;
+      box-shadow: 0px 0px 5px 0px rgba(201, 201, 201, 1);
+    }
+    &.selected rect {
+      stroke: @primary;
+      box-shadow: 0px 0px 5px 0px @primary;
+    }
+    text {
+      font: 12px sans-serif;
+      fill: @base-color;
+    }
+  }
+  
+  .link {
+    fill: none;
+    stroke: #ccc;
+  }
+}
